@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới thiệu</title>
+    <title>Thông tin đơn hàng</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link href="../css/4.5.2 bootstrap.min.css" rel="stylesheet">
     <link href="../css/5.3.0 bootstrap.min.css" rel="stylesheet">
@@ -144,6 +145,7 @@
     .text p{
       margin-left:10px;
     }
+    
     .text img{
         width:60%;
        margin-left:200px;
@@ -309,54 +311,48 @@
         <li><a href="../Html/Liên hệ.html">LIÊN HỆ</a></li>
     </ul>
 </nav>
-<div class="content">
- <!-- Menu -->
- <div class="menu">
-    <div class="menu-container">
-      <div class="menu-header">DANH MỤC</div>
-      <ul>
-        <li class="menu-item">
-          <a href="#"> KHUYẾN MÃI - QUÀ TẶNG</a>
-        </li>
-        <li class="menu-item">
-          <a href="../Html/Giày nam.html"> GIÀY NAM</a>
-        </li>
-        <li class="menu-item">
-          <a href="../Html/Giày nữ.html"> GIÀY NỮ</a>
-        </li>
-        <li class="menu-item">
-          <a href="#"> GIÀY THỂ THAO</a>
-        </li>
-        <li class="menu-item">
-          <a href="#"> TÍCH ĐIỂM ĐỔI QUÀ</a>
-        </li>  
-      </ul>
-  </div>
-  </div>
-  <!-- giới thiệu -->
-   <div class="text">
-    <h1><strong>Chào mừng đến với <a href="../Html/Trang chủ.html">SHULAB</a> –  Thương hiệu phân phối giày Nike chính hãng số 1 tại Việt Nam</strong></h1>
+<div class="container mt-5">
+    <h2 id="h2" class="text-center">THANH TOÁN THÀNH CÔNG</h2>
+    <table class="table table-bordered cart-table" id="tableh2">
+        <thead>
+            <tr>
+                <th scope="col">Họ tên</th>
+                <th scope="col">Số Điện Thoại</th>
+                <th scope="col">Address</th>
+                <th scope="col">City</th>
+                <th scope="col">Phương thức thanh toán</th>
+                
+            </tr>
+            <tr>
+                <td><span id="displayName"></span></td>
+                <td><span id="displayPhone"></span></td>
+                <td><span id="displayAddress"></span></td>
+                <td><span id="displaycity"></span></td>
+                <td><span id="displaypttt"></span></td>
+            </tr>
 
-<p>Tại SHULAB, mọi sản phẩm đều được nhập khẩu chính hãng từ Nike, đảm bảo đạt tiêu chuẩn cao nhất về chất lượng và thiết kế. Chúng tôi cam kết mang đến cho khách hàng những đôi giày chuẩn 100% chính hãng, kèm theo chính sách bảo hành và đổi trả rõ ràng, minh bạch.<br><br>
-<img src="../images/gt.png" alt=""><br>
-Chúng tôi không chỉ bán giày, mà còn mang đến cho bạn một trải nghiệm mua sắm khác biệt. Với đội ngũ nhân viên nhiệt tình, chuyên nghiệp, SHULAB sẵn sàng tư vấn và giúp bạn chọn lựa sản phẩm phù hợp nhất với nhu cầu và phong cách cá nhân.<br><br>
-
-Lợi ích khi mua sắm tại SHULAB:<br>
-<ul>
-    <li>Sản phẩm chính hãng 100%: Chất lượng được đảm bảo với đầy đủ giấy tờ và chứng nhận.
-    </li>
-    <li>Giá cả cạnh tranh: Cam kết mức giá tốt nhất cho sản phẩm chính hãng.
-    </li>
-    <li>Dịch vụ hậu mãi xuất sắc: Chính sách bảo hành và hỗ trợ khách hàng chu đáo.
-    </li>
-    <li>Hệ thống phân phối rộng khắp: Cửa hàng trải dài trên cả nước và hỗ trợ mua sắm trực tuyến dễ dàng.
-    </li>
-   </ul>
-
-&nbsp Hãy để <strong>SHULAB</strong> đồng hành cùng bạn trên mọi bước đường với những đôi giày Nike chính hãng, đẳng cấp và bền bỉ nhất! Đến SHULAB hôm nay để trải nghiệm ngay sự khác biệt.</p>
-   </div>
+        </thead>
+        
+    </table>
 </div>
-</div>
+    
+
+
+    <script>
+        // Lấy thông tin từ localStorage
+        var name = localStorage.getItem("name");
+        var phone = localStorage.getItem("phone");
+        var address = localStorage.getItem("address");
+        var city = localStorage.getItem("city");
+        var pttt = localStorage.getItem("pttt");
+
+        // Hiển thị thông tin lên trang
+        document.getElementById("displayName").innerText = name;
+        document.getElementById("displayPhone").innerText = phone;
+        document.getElementById("displayAddress").innerText = address;
+        document.getElementById("displaycity").innerText = city;
+        document.getElementById("displaypttt").innerText = pttt;
+    </script>
 <footer>
   <div class="footer-top">
       <div class="footer-item">

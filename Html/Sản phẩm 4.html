@@ -260,8 +260,8 @@
                                 </div>
                                 <div class="col-10">
                                     <div class="container">
-                                        <a href="#loginModal" class="text-dark" data-bs-toggle="modal" data-bs-target="#loginModal">Đăng nhập</a>/
-                                        <a href="#registerModal" class="text-dark" data-bs-toggle="modal" data-bs-target="#registerModal">Đăng ký</a>
+                                        <a href="../Html/Đăng nhập.html" class="text-dark"  >Đăng nhập</a>/
+                                    <a href="../Html/Đăng ký.html" class="text-dark" >Đăng ký</a>
                                     </div>
                                    &nbsp <strong>Tài khoản</strong>
                                 </div>
@@ -387,79 +387,7 @@
             document.getElementById('mainImage').src = imageUrl;
         }
     </script>
-<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="loginModalLabel">ĐĂNG NHẬP</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                        <label for="emailInput" class="form-label">Đăng nhập bằng Email</label>
-                        <input type="email" class="form-control" id="emailInput" placeholder="Nhập email">
-                    </div>
-                    <div class="mb-3">
-                        <label for="passwordInput" class="form-label">Mật khẩu</label>
-                        <input type="password" class="form-control" id="passwordInput" placeholder="Nhập mật khẩu">
-                    </div>
-                    <div class="form-check mb-3 text-start">
-                        <input class="form-check-input" type="checkbox" value="" id="rememberMe">
-                        <label class="form-check-label" for="rememberMe">Ghi nhớ đăng nhập</label>
-                    </div>
-                    <div class="mb-3 text-end">
-                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">Quên mật khẩu?</button>                  
-                    </div>
-                    <button type="submit" class="btn btn-primary w-100">Đăng Nhập</button>
-                    <div class="modal-footer">
-                        <p class="text-center w-100">Bạn chưa có tài khoản? <a href="#registerModal" class="text-primary" data-bs-toggle="modal" data-bs-target="#registerModal">Đăng ký</a></p>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Đăng ký Modal -->
-<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="registerModalLabel">ĐĂNG KÝ</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                        <label for="HotenInput" class="form-label">Họ tên</label>
-                        <input type="text" class="form-control" id="HotenInput" placeholder="Họ và tên">
-                    </div>
-                    <div class="mb-3">
-                        <label for="PhoneInput" class="form-label">Số điện thoại</label>
-                        <input type="text" class="form-control" id="PhoneInput" placeholder="Điện thoại của bạn">
-                    </div>
-                    <div class="mb-3">
-                        <label for="emailInputReg" class="form-label">Email đăng nhập</label>
-                        <input type="email" class="form-control" id="emailInputReg" placeholder="Nhập email">
-                    </div>
-                    <div class="mb-3">
-                        <label for="passwordInputReg" class="form-label">Mật khẩu</label>
-                        <input type="password" class="form-control" id="passwordInputReg" placeholder="Nhập mật khẩu">
-                    </div>
-                    <div class="mb-3">
-                        <label for="passwordInputConfirm" class="form-label">Xác nhận Mật khẩu</label>
-                        <input type="password" class="form-control" id="passwordInputConfirm" placeholder="Nhập mật khẩu">
-                    </div>
-                    <div class="form-check mb-3 text-start">
-                        <input class="form-check-input" type="checkbox" value="" id="agreeTerms">
-                        <label class="form-check-label" for="agreeTerms">Tôi đồng ý với <a href="../Html/Điều khoản dịch vụ.html">Điều khoản dịch vụ</a> và <a href="../Html/Chính sách bảo mật.html">Chính sách bảo mật</a> của công ty</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary w-100">Đăng ký thành viên</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
+
 <footer>
     <div class="footer-top">
         <div class="footer-item">
